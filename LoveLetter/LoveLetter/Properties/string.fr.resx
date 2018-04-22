@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ABaron" xml:space="preserve">
+    <value>un baron</value>
+  </data>
+  <data name="ACountess" xml:space="preserve">
+    <value>une comtesse</value>
+  </data>
+  <data name="ActivateTutorial" xml:space="preserve">
+    <value>Activer tutoriel</value>
+  </data>
+  <data name="AGuard" xml:space="preserve">
+    <value>un garde</value>
+  </data>
+  <data name="AHandmaid" xml:space="preserve">
+    <value>une servante</value>
+  </data>
+  <data name="AKing" xml:space="preserve">
+    <value>un roi</value>
+  </data>
+  <data name="APriest" xml:space="preserve">
+    <value>un prêtre</value>
+  </data>
+  <data name="APrince" xml:space="preserve">
+    <value>un prince</value>
+  </data>
+  <data name="APrincess" xml:space="preserve">
+    <value>une princesse</value>
+  </data>
+  <data name="Baron" xml:space="preserve">
+    <value>Baron</value>
+  </data>
+  <data name="BaronEffectValue" xml:space="preserve">
+    <value>Baron Valeur : 3 {0}Comparez votre main avec un autre joueur, {1}celui avec la valeur la plus faible est eliminé</value>
+  </data>
+  <data name="ChooseATypeOfCard" xml:space="preserve">
+    <value>Choissisez un type de carte</value>
+  </data>
+  <data name="ComparingHandsOfAnd" xml:space="preserve">
+    <value>Comparaison entre la main de {0} et celle de {1}</value>
+  </data>
+  <data name="Countess" xml:space="preserve">
+    <value>Comtesse</value>
+  </data>
+  <data name="CountessEffectValue" xml:space="preserve">
+    <value>Comtesse Valeur : 7 {0}Si vous avez cette carte en main en meme temps que le roi ou le prince, {1}vous devez vous défaussez de cette carte</value>
+  </data>
+  <data name="DesactivateTutorial" xml:space="preserve">
+    <value>Desactiver tutoriel</value>
+  </data>
+  <data name="DoesNotHaveTheCard" xml:space="preserve">
+    <value>{0} n'a pas la carte {1}</value>
+  </data>
+  <data name="Draw" xml:space="preserve">
+    <value>Egalité</value>
+  </data>
+  <data name="Guard" xml:space="preserve">
+    <value>Garde</value>
+  </data>
+  <data name="GuardEffectValue" xml:space="preserve">
+    <value>Garde Valeur : 1 {0}Choisisez un joueur et essayez de deviner quelle carte il a en main (à l'exception du garde), {1}si vous avez juste le joueur est eliminé</value>
+  </data>
+  <data name="HadToDiscard" xml:space="preserve">
+    <value>{0} a dû défausser sa main</value>
+  </data>
+  <data name="Handmaid" xml:space="preserve">
+    <value>Servante</value>
+  </data>
+  <data name="HandmaidEffectValue" xml:space="preserve">
+    <value>Servante Valeur : 4 {0}Vous êtes protégé jusqu'au prochain tour</value>
+  </data>
+  <data name="HasReachedLimitNumberMarker" xml:space="preserve">
+    <value>{0} a atteint la limite de marqueurs, il a gagné !</value>
+  </data>
+  <data name="HasWon" xml:space="preserve">
+    <value>{0} a gagné !</value>
+  </data>
+  <data name="HeresTheHandOfYourTarget" xml:space="preserve">
+    <value>Voici la main de {0}</value>
+  </data>
+  <data name="IsOutOfTheGame" xml:space="preserve">
+    <value>{0} a perdu !</value>
+  </data>
+  <data name="IsProtectedForOneTurn" xml:space="preserve">
+    <value>{0} est protégé pour un tour</value>
+  </data>
+  <data name="IsTheLastPlayer" xml:space="preserve">
+    <value>{0} est le dernier joueur, il gagne le round !</value>
+  </data>
+  <data name="King" xml:space="preserve">
+    <value>Roi</value>
+  </data>
+  <data name="KingEffectValue" xml:space="preserve">
+    <value>Roi Valeur : 6 {0}Echangez votre main avec un autre joueur</value>
+  </data>
+  <data name="NewRound" xml:space="preserve">
+    <value>Manche {0}</value>
+  </data>
+  <data name="Player" xml:space="preserve">
+    <value>Joueur</value>
+  </data>
+  <data name="Priest" xml:space="preserve">
+    <value>Prêtre</value>
+  </data>
+  <data name="PriestEffectValue" xml:space="preserve">
+    <value>Prêtre Valeur : 2 {0}Regardez la main d'un autre joueur</value>
+  </data>
+  <data name="Prince" xml:space="preserve">
+    <value>Prince</value>
+  </data>
+  <data name="PrinceEffectValue" xml:space="preserve">
+    <value>Prince Valeur : 5 {0}Choisisez un joueur (vous inclus), {1}le joueur défausse sa main et pioche une nouvelle carte</value>
+  </data>
+  <data name="Princess" xml:space="preserve">
+    <value>Princesse</value>
+  </data>
+  <data name="PrincessEffectValue" xml:space="preserve">
+    <value>Princesse Valeur : 8 {0} Si vous défaussez cette carte vous êtes eliminé de la manche</value>
+  </data>
+  <data name="Select1Player" xml:space="preserve">
+    <value>Selectionnez un joueur</value>
+  </data>
+  <data name="StartingNewGame" xml:space="preserve">
+    <value>Début d'une nouvelle partie</value>
+  </data>
+  <data name="SwitchHands" xml:space="preserve">
+    <value>{0} a échangé sa main avec {1}</value>
+  </data>
+  <data name="Take1CardFromTheDeck" xml:space="preserve">
+    <value>Prenez une carte du deck</value>
+  </data>
+  <data name="TheGameDeckIsEmpty" xml:space="preserve">
+    <value>Le deck de jeu est vide</value>
+  </data>
+  <data name="ThereAreNoAvalaibleTarget" xml:space="preserve">
+    <value>Pas de cible valide</value>
+  </data>
+  <data name="ThinksThatHas" xml:space="preserve">
+    <value>{0} pense que {1} a {2}</value>
+  </data>
+  <data name="UseAPriestToSee" xml:space="preserve">
+    <value>{0} a utilisé un prêtre pour voir la main de {1}</value>
+  </data>
+  <data name="WellGuessed" xml:space="preserve">
+    <value>Bien deviné</value>
+  </data>
+  <data name="WonTheBattle" xml:space="preserve">
+    <value>{0} a gagné la bataille contre {1} !</value>
+  </data>
+  <data name="YouCannotPickMoreThanOneCard" xml:space="preserve">
+    <value>Vous ne pouvez pas piochez plus d'une carte !</value>
+  </data>
+  <data name="YouNeedToPickACardFirst" xml:space="preserve">
+    <value>Vous devez piocher une carte d'abord</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>Anglais</value>
+  </data>
+  <data name="French" xml:space="preserve">
+    <value>Français</value>
+  </data>
+  <data name="German" xml:space="preserve">
+    <value>Allemand</value>
+  </data>
+  <data name="hasTheMostStrongestCardDiscarded" xml:space="preserve">
+    <value>{0} gagne la manche avec le plus de carte forte défaussé</value>
+  </data>
+  <data name="hasTheStrongestCard" xml:space="preserve">
+    <value>{0} gagne la manche car il avait la carte la plus forte !</value>
+  </data>
+  <data name="effectVolume" xml:space="preserve">
+    <value>Volume des effets</value>
+  </data>
+  <data name="masterVolume" xml:space="preserve">
+    <value>Volume principal</value>
+  </data>
+  <data name="musicVolume" xml:space="preserve">
+    <value>Volume de la musique</value>
+  </data>
+  <data name="mute" xml:space="preserve">
+    <value>Muet</value>
+  </data>
+  <data name="showMessageBox" xml:space="preserve">
+    <value>Montrer la boite des messages</value>
+  </data>
+  <data name="showMessageFullscreen" xml:space="preserve">
+    <value>Montrer les messages en plein écran</value>
+  </data>
+  <data name="ItsNotYourTurn" xml:space="preserve">
+    <value>Ce n'est pas votre tour</value>
+  </data>
+  <data name="PlayerPlay" xml:space="preserve">
+    <value>Joueur {0} joue</value>
+  </data>
+  <data name="Score" xml:space="preserve">
+    <value>Points : {0}</value>
+  </data>
+  <data name="DiscardedPrincess" xml:space="preserve">
+    <value>{0} s'est défaussé de la Princesse !</value>
+  </data>
+  <data name="MustPlayCountess" xml:space="preserve">
+    <value>Vous devez jouer la comtess!</value>
+  </data>
+  <data name="GameWillBegin" xml:space="preserve">
+    <value>La partie va commencer</value>
+  </data>
+  <data name="Join" xml:space="preserve">
+    <value>Rejoindre</value>
+  </data>
+  <data name="NotEnoughPlayer" xml:space="preserve">
+    <value>Pas assez de joueurs</value>
+  </data>
+  <data name="SomeoneLeave" xml:space="preserve">
+    <value>Un joueur est parti !</value>
+  </data>
+  <data name="Play1Card" xml:space="preserve">
+    <value>Joue une carte</value>
+  </data>
+</root>

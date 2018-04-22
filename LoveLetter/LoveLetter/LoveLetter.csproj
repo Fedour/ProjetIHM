@@ -1,0 +1,435 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{86DFA000-A174-43BC-BCE5-7F19A4F9EF4F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LoveLetter</RootNamespace>
+    <AssemblyName>LoveLetter</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AskIPFormcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AskIPFormcs.Designer.cs">
+      <DependentUpon>AskIPFormcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controller\CardEffect.cs" />
+    <Compile Include="Controller\CardEffectMulti.cs" />
+    <Compile Include="Controller\GameController.cs" />
+    <Compile Include="Controller\GameControllerMulti.cs" />
+    <Compile Include="FormLoading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLoading.Designer.cs">
+      <DependentUpon>FormLoading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_AddGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_AddGame.Designer.cs">
+      <DependentUpon>Form_AddGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_BeforeGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_BeforeGame.Designer.cs">
+      <DependentUpon>Form_BeforeGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Global_Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Global_Settings.Designer.cs">
+      <DependentUpon>Form_Global_Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Lobby.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Lobby.Designer.cs">
+      <DependentUpon>Form_Lobby.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Menu.Designer.cs">
+      <DependentUpon>Form_Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_game_settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_game_settings.Designer.cs">
+      <DependentUpon>Form_game_settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Pseudo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Pseudo.Designer.cs">
+      <DependentUpon>Form_Pseudo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameFormMulti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameFormMulti.Designer.cs">
+      <DependentUpon>GameFormMulti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\AI.cs" />
+    <Compile Include="Network\Client.cs" />
+    <Compile Include="Network\Lobby.cs" />
+    <Compile Include="Network\Message.cs" />
+    <Compile Include="Network\NetworkTest.cs" />
+    <Compile Include="Network\Server.cs" />
+    <Compile Include="Properties\string.en.Designer.cs">
+      <DependentUpon>string.en.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Properties\string.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>string.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Localization.cs" />
+    <Compile Include="Thickness.cs" />
+    <Compile Include="View\comboBoxDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\comboBoxDialog.Designer.cs">
+      <DependentUpon>comboBoxDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Dialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Dialog.Designer.cs">
+      <DependentUpon>Form_Dialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\GameView.cs" />
+    <Compile Include="Controller\MenuController.cs" />
+    <Compile Include="View\MenuView.cs" />
+    <Compile Include="Model\Card.cs" />
+    <Compile Include="GameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameForm.Designer.cs">
+      <DependentUpon>GameForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Game.cs" />
+    <Compile Include="Model\Player.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AskIPFormcs.resx">
+      <DependentUpon>AskIPFormcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLoading.de.resx">
+      <DependentUpon>FormLoading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLoading.en.resx">
+      <DependentUpon>FormLoading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLoading.fr.resx">
+      <DependentUpon>FormLoading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLoading.resx">
+      <DependentUpon>FormLoading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_AddGame.de.resx">
+      <DependentUpon>Form_AddGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_AddGame.en.resx">
+      <DependentUpon>Form_AddGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_AddGame.fr.resx">
+      <DependentUpon>Form_AddGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_AddGame.resx">
+      <DependentUpon>Form_AddGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_BeforeGame.de.resx">
+      <DependentUpon>Form_BeforeGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_BeforeGame.en.resx">
+      <DependentUpon>Form_BeforeGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_BeforeGame.fr.resx">
+      <DependentUpon>Form_BeforeGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_BeforeGame.resx">
+      <DependentUpon>Form_BeforeGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_game_settings.de.resx">
+      <DependentUpon>Form_game_settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_game_settings.en.resx">
+      <DependentUpon>Form_game_settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_game_settings.fr.resx">
+      <DependentUpon>Form_game_settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Global_Settings.de.resx">
+      <DependentUpon>Form_Global_Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Global_Settings.fr.resx">
+      <DependentUpon>Form_Global_Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Global_Settings.resx">
+      <DependentUpon>Form_Global_Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Lobby.de.resx">
+      <DependentUpon>Form_Lobby.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Lobby.en.resx">
+      <DependentUpon>Form_Lobby.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Lobby.fr.resx">
+      <DependentUpon>Form_Lobby.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Lobby.resx">
+      <DependentUpon>Form_Lobby.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Menu.de.resx">
+      <DependentUpon>Form_Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Menu.en.resx">
+      <DependentUpon>Form_Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Menu.fr.resx">
+      <DependentUpon>Form_Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Menu.resx">
+      <DependentUpon>Form_Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Pseudo.de.resx">
+      <DependentUpon>Form_Pseudo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Pseudo.en.resx">
+      <DependentUpon>Form_Pseudo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Pseudo.fr.resx">
+      <DependentUpon>Form_Pseudo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Pseudo.resx">
+      <DependentUpon>Form_Pseudo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameFormMulti.de.resx">
+      <DependentUpon>GameFormMulti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameFormMulti.en.resx">
+      <DependentUpon>GameFormMulti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameFormMulti.fr.resx">
+      <DependentUpon>GameFormMulti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameFormMulti.resx">
+      <DependentUpon>GameFormMulti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameForm.de.resx">
+      <DependentUpon>GameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameForm.en.resx">
+      <DependentUpon>GameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameForm.fr.resx">
+      <DependentUpon>GameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameForm.resx">
+      <DependentUpon>GameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_game_settings.resx">
+      <DependentUpon>Form_game_settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Properties\string.en.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>string.en.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\string.de.resx" />
+    <EmbeddedResource Include="Properties\string.fr.resx" />
+    <EmbeddedResource Include="Properties\string.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>string.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\comboBoxDialog.resx">
+      <DependentUpon>comboBoxDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Dialog.resx">
+      <DependentUpon>Form_Dialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 et x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\what-to-write-in-a-love-letter1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\what-to-write-in-a-love-letter2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vintage_letters_mails_13_by_eminguyen-d62lgm4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vintage_letters_reworked.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stylo-a-plume-0003.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wildtextures-old-paper-texture-3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backCard.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backCard1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backCard11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backCard1Glow.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backCard1Glow.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baron.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\countess.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guard.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\handmaid.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\king.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\priest.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prince.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\princess.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backcard2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wildtextures-old-paper-texture-3-reworked-version.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\glow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cardSound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cardSoundv2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Puzzle Theme1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cardPick.wav" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
